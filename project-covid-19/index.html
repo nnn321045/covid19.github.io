@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>covid-19</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="items item-1">
+            <h4>新冠肺炎 Covid-19 資訊系統</h4>
+            <select id="countrySelect" class="dropdown">
+                <option value="">選擇國家</option>
+                <option value="Taiwan">台灣</option>
+                <option value="USA">美國</option>
+                <option value="Japan">日本</option>
+                <option value="China">中國</option>
+                <option value="Vietnam">越南</option>
+                <option value="Austria">奧地利</option>
+                <option value="India">印度</option>
+            </select>
+        </div>
+        <div class="items item-2" id="country">
+            <img src="" id="flagImg">
+        </div>
+        <div class="items item-3"><i class="fas fa-book"></i></i> 今日確診:
+            <span id='today'></span>
+        </div>
+        <div class="items item-4"><i class="fas fa-address-book"></i></i> 今日死亡數:
+            <span id='todayDeath'></span>
+        </div>
+        <div class="items item-5"><i class="far fa-address-card"></i> 總個案數:
+            <span id='total'></span>
+        </div>
+        <div class="items item-6"><i class="far fa-address-card"></i> 活耀個案數:
+            <span id='active'></span>
+        </div>
+        <div class="items item-7"><i class="fas fa-child"></i> 康復個案數:
+            <span id='recovery'></span>
+        </div>
+        <div class="items item-8"><i class="fas fa-clipboard-check"></i> 已測試數:
+            <span id='tested'></span>
+        </div>
+        <div class="items item-9"><i class="fas fa-check"></i> 總死亡數:
+            <span id='totalDeath'></span>
+        </div>
+        <div class="items item-10"><i class="fas fa-check"></i> 死亡率:
+            <span id='deathRate'></span>
+        </div>
+    </div>
+</body>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.9.1/axios.js' integrity='sha512-Kg0CewqPNO/ziOJuCq5eyl3P/V6OLz/Lb1I2m+yKS3lHZcGVFN/KOew18rWP+kTsL7haYdaqGjwHQCZrN0heLQ==' crossorigin='anonymous'></script>
+<script src="js/index.js"></script>
+
+</html>
